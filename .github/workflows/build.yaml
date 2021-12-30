@@ -1,4 +1,10 @@
 name: Build
 
 on:
-  workflow_dis
+  workflow_dispatch:
+  push:
+    branches:
+      - "master"
+
+env:
+  REGISTRY
