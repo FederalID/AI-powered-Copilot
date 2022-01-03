@@ -11,4 +11,7 @@ env:
 
 jobs:
   build-push-image:
-    runs-on: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        use
