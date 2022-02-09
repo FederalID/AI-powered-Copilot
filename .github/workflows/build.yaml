@@ -24,4 +24,5 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.repository_owner }}
-          password: ${{ secre
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build Docker i
