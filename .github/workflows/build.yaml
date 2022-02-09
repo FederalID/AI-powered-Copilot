@@ -23,4 +23,5 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ${{ env.REGISTRY }}
-          user
+          username: ${{ github.repository_owner }}
+          password: ${{ secre
