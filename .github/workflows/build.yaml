@@ -25,4 +25,6 @@ jobs:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build Docker i
+      - name: Build Docker image
+        run: |
+          docker build -t ${{ env.REGI
