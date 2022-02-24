@@ -27,4 +27,4 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build Docker image
         run: |
-          docker build -t ${{ env.REGI
+          docker build -t ${{ env.REGISTRY }}/${{ github.repository_owner }}/openai
