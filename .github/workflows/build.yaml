@@ -27,4 +27,5 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build Docker image
         run: |
-          docker build -t ${{ env.REGISTRY }}/${{ github.repository_owner }}/openai
+          docker build -t ${{ env.REGISTRY }}/${{ github.repository_owner }}/openai-copilot .
+          docker push ${{ env.REGISTRY }}/${{ github.reposit
