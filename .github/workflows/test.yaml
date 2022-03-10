@@ -12,4 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - name:
+    - name: Set up Go 1.x
+      uses: actions/setup-go@v5
+
+    - 
