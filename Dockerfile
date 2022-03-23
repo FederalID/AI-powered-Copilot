@@ -8,4 +8,6 @@ RUN cd /go/src/github.com/feiskyer/openai-copilot && \
 # Final image
 FROM alpine
 # EXPOSE 80
-WORKDI
+WORKDIR /
+
+RUN apk add --update curl wget py
