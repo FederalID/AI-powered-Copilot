@@ -12,4 +12,6 @@ WORKDIR /
 
 RUN apk add --update curl wget python3 py3-pip && \
     rm -rf /var/cache/apk/* && \
-    m
+    mkdir -p /etc/openai-copilot
+
+COPY --from=builder /go/src/gi
