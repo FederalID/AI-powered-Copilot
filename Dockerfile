@@ -10,4 +10,6 @@ FROM alpine
 # EXPOSE 80
 WORKDIR /
 
-RUN apk add --update curl wget py
+RUN apk add --update curl wget python3 py3-pip && \
+    rm -rf /var/cache/apk/* && \
+    m
