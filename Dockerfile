@@ -14,4 +14,4 @@ RUN apk add --update curl wget python3 py3-pip && \
     rm -rf /var/cache/apk/* && \
     mkdir -p /etc/openai-copilot
 
-COPY --from=builder /go/src/gi
+COPY --from=builder /go/src/github.com/feiskyer/openai-copilot/_out/openai-copilot /usr/local/bin/
