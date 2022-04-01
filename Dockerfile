@@ -15,3 +15,6 @@ RUN apk add --update curl wget python3 py3-pip && \
     mkdir -p /etc/openai-copilot
 
 COPY --from=builder /go/src/github.com/feiskyer/openai-copilot/_out/openai-copilot /usr/local/bin/
+
+USER copilot
+ENTRYPOINT [ "/usr/local/bin/openai-copilot" ]
