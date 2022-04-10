@@ -36,3 +36,50 @@ func chat() {
 	messages := []openai.ChatCompletionMessage{
 		{
 			Role:    openai.ChatMessageRoleSystem,
+			Content: consts.DefaultPrompt,
+		},
+	}
+
+	// Non-interactive mode
+	if prompt != "" {
+		messages = append(messages, openai.ChatCompletionMessage{
+			Role:    openai.ChatMessageRoleUser,
+			Content: prompt,
+		})
+		response, _, err = assistants.Assistant(model, messages, maxTokens, countTokens, verbose)
+		if err != nil {
+			color.Red(err.Error())
+			return
+		}
+
+		fmt.Printf("%s\n\n", response)
+		return
+	}
+
+	// Interactive mode
+	color.New(color.FgYellow).Printf("You: ")
+	scanner := bufio.NewScanner(os.Stdin)
+	for scanner.Scan() {
+		message := scanner.Text()
+		messages = append(messages, openai.ChatCompletionMessage{
+			Role:    openai.ChatMessageRoleUser,
+			Content: message,
+		})
+		response, messages, err = assistants.Assistant(model, messages, maxTokens, countTokens, verbose)
+		if err != nil {
+			color.Red(err.Error())
+			continue
+		}
+
+		color.New(color.FgYellow).Printf("AI: ")
+		fmt.Printf("%s\n\n", response)
+		color.New(color.FgYellow).Printf("You: ")
+	}
+}
+
+// init initializes the command line flags
+func init() {
+	rootCmd.PersistentFlags().StringVarP(&model, "model", "m", "gpt-4", "OpenAI model to use")
+	rootCmd.PersistentFlags().StringVarP(&prompt, "prompt", "p", "", "Prompts sent to GPT model for non-interactive mode. If not set, interactive mode is used")
+	rootCmd.PersistentFlags().IntVarP(&maxTokens, "max-tokens", "t", 1024, "Max tokens for the GPT model")
+	rootCmd.PersistentFlags().BoolVarP(&countTokens, "count-tokens", "c", false, "Print tokens count")
