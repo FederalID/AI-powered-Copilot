@@ -7,4 +7,5 @@ import (
 	"math"
 	"strings"
 
-	"g
+	"github.com/fatih/color"
+	"github.com/feiskyer/openai-copilot/
