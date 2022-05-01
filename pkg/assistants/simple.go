@@ -11,3 +11,7 @@ import (
 	"github.com/feiskyer/openai-copilot/pkg/llms"
 	"github.com/feiskyer/openai-copilot/pkg/tools"
 	"github.com/sashabaranov/go-openai"
+)
+
+// Assistant is the simplest AI assistant.
+func Assistant(mode
