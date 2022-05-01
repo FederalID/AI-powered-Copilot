@@ -8,4 +8,5 @@ import (
 	"strings"
 
 	"github.com/fatih/color"
-	"github.com/feiskyer/openai-copilot/
+	"github.com/feiskyer/openai-copilot/pkg/llms"
+	"github.com/feiskyer/openai-copilot/pkg/tool
