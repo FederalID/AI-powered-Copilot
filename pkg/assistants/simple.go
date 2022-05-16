@@ -14,4 +14,4 @@ import (
 )
 
 // Assistant is the simplest AI assistant.
-func Assistant(model string, prompts []openai.ChatCompletionMessage, 
+func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens int, countTokens bool, verbose bool) (
