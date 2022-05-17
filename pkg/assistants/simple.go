@@ -17,4 +17,7 @@ import (
 func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens int, countTokens bool, verbose bool) (result string, chatHistory []openai.ChatCompletionMessage, err error) {
 	chatHistory = prompts
 	if len(prompts) == 0 {
+		return "", nil, fmt.Errorf("prompts cannot be empty")
+	}
+
 	
