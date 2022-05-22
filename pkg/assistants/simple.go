@@ -20,4 +20,6 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 		return "", nil, fmt.Errorf("prompts cannot be empty")
 	}
 
-	
+	client, err := llms.NewOpenAIClient()
+	if err != nil {
+		return "", nil, fm
