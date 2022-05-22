@@ -22,4 +22,7 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 
 	client, err := llms.NewOpenAIClient()
 	if err != nil {
-		return "", nil, fm
+		return "", nil, fmt.Errorf("unable to get OpenAI client: %v", err)
+	}
+
+	d
