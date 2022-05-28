@@ -25,4 +25,6 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 		return "", nil, fmt.Errorf("unable to get OpenAI client: %v", err)
 	}
 
-	d
+	defer func() {
+		if countTokens {
+			count := llms
