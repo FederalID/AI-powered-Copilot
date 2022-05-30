@@ -28,4 +28,8 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 	defer func() {
 		if countTokens {
 			count := llms.NumTokensFromMessages(chatHistory, model)
-			color.Green("Total t
+			color.Green("Total tokens: %d\n\n", count)
+		}
+	}()
+
+	req := openai.ChatCom
