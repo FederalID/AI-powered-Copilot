@@ -32,4 +32,6 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 		}
 	}()
 
-	req := openai.ChatCom
+	req := openai.ChatCompletionRequest{
+		Model:       model,
+		MaxTokens:   max
