@@ -36,4 +36,6 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 		Model:       model,
 		MaxTokens:   maxTokens,
 		Temperature: math.SmallestNonzeroFloat32,
-		Me
+		Messages:    chatHistory,
+	}
+	resp, err := client.CreateChatCompletio
