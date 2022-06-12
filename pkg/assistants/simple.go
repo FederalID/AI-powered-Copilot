@@ -34,4 +34,6 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 
 	req := openai.ChatCompletionRequest{
 		Model:       model,
-		MaxTokens:   max
+		MaxTokens:   maxTokens,
+		Temperature: math.SmallestNonzeroFloat32,
+		Me
