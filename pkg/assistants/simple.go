@@ -42,4 +42,6 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 	if err != nil {
 		return "", chatHistory, fmt.Errorf("chat completion error: %v", err)
 	}
-	chatHistory = append(chatHistory, openai.ChatCompletionMessa
+	chatHistory = append(chatHistory, openai.ChatCompletionMessage{
+		Role:    openai.ChatMessageRoleAssistant,
+		Content: str
