@@ -44,4 +44,7 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 	}
 	chatHistory = append(chatHistory, openai.ChatCompletionMessage{
 		Role:    openai.ChatMessageRoleAssistant,
-		Content: str
+		Content: string(resp.Choices[0].Message.Content),
+	})
+
+	if verbose {
