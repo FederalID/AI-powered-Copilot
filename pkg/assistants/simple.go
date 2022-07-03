@@ -48,3 +48,4 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 	})
 
 	if verbose {
+		color.Cyan("Initial response from LLM:\n%s\n\n
