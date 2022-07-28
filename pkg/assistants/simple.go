@@ -51,4 +51,5 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 		color.Cyan("Initial response from LLM:\n%s\n\n", resp.Choices[0].Message.Content)
 	}
 
-	var toolPrompt tools.
+	var toolPrompt tools.ToolPrompt
+	if err = json.Unmarshal([]byte(resp.Cho
