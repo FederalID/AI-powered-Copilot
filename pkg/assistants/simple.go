@@ -54,4 +54,4 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 	var toolPrompt tools.ToolPrompt
 	if err = json.Unmarshal([]byte(resp.Choices[0].Message.Content), &toolPrompt); err != nil {
 		if verbose {
-			color.Cyan("Unable to parse tool fr
+			color.Cyan("Unable to parse tool from prompts (%s), assuming got final answer", resp.Choices[0].Message.Co
