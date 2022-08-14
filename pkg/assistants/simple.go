@@ -61,4 +61,6 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 
 	iterations := 0
 	maxIterations := 10
-	
+	for {
+		if verbose {
+			color.Cyan("Thought: %s\n\n", tool
