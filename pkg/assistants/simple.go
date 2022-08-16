@@ -70,4 +70,7 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 			color.Red("Max iterations reached")
 			break
 		}
-		iterations
+		iterations++
+
+		if toolPrompt.FinalAnswer != "" {
+			if ve
