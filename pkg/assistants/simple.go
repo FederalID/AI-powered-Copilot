@@ -67,4 +67,7 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 		}
 
 		if iterations > maxIterations {
-			color.R
+			color.Red("Max iterations reached")
+			break
+		}
+		iterations
