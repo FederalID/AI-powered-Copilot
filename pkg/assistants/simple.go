@@ -73,4 +73,5 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 		iterations++
 
 		if toolPrompt.FinalAnswer != "" {
-			if ve
+			if verbose {
+				color.Cyan("Final answer: %s\n\n", toolPrompt.FinalAnsw
