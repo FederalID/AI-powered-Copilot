@@ -79,4 +79,6 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 			return toolPrompt.FinalAnswer, chatHistory, nil
 		}
 
-		if toolPrompt.Action.Nam
+		if toolPrompt.Action.Name != "" {
+			if verbose {
+				color.Cyan("Invoking %s tool w
