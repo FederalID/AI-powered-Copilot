@@ -84,3 +84,5 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 				color.Cyan("Invoking %s tool with inputs: \n============\n%s\n============\n\n", toolPrompt.Action.Name, toolPrompt.Action.Input)
 			}
 			ret, err := tools.CopilotTools[toolPrompt.Action.Name](toolPrompt.Action.Input)
+			if err != nil {
+				return "", chatHistory, fmt.Erro
