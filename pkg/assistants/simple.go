@@ -81,4 +81,4 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 
 		if toolPrompt.Action.Name != "" {
 			if verbose {
-				color.Cyan("Invoking %s tool w
+				color.Cyan("Invoking %s tool with inputs: \n============\n%s\n============\n\n", toolPrompt.A
