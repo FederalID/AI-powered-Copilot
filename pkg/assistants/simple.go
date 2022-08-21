@@ -85,4 +85,5 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 			}
 			ret, err := tools.CopilotTools[toolPrompt.Action.Name](toolPrompt.Action.Input)
 			if err != nil {
-				return "", chatHistory, fmt.Erro
+				return "", chatHistory, fmt.Errorf("tool %s error: %v", toolPrompt.Action.Name, err)
+	
