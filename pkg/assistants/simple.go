@@ -93,4 +93,4 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 				color.Cyan("Observation: %s\n\n", observation)
 			}
 
-		
+			// Constrict the prompt to the max tokens allowed by the model.
