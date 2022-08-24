@@ -90,3 +90,7 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 
 			observation := strings.TrimSpace(ret)
 			if verbose {
+				color.Cyan("Observation: %s\n\n", observation)
+			}
+
+		
