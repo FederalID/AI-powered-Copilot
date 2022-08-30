@@ -98,3 +98,4 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 			observation = llms.ConstrictPrompt(observation, model, maxTokens)
 
 			toolPrompt.Observation = observation
+			assistantMessage, _ := json.Marshal(toolPromp
