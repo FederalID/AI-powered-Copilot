@@ -94,4 +94,5 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 			}
 
 			// Constrict the prompt to the max tokens allowed by the model.
-			// This is required because the tool may have generated a 
+			// This is required because the tool may have generated a long output.
+			observation = llms.ConstrictPrompt(observation, m
