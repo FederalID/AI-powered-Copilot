@@ -99,4 +99,6 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 
 			toolPrompt.Observation = observation
 			assistantMessage, _ := json.Marshal(toolPrompt)
-			chatHistory = append(chatHistory, openai.ChatCompl
+			chatHistory = append(chatHistory, openai.ChatCompletionMessage{
+				Role:    openai.ChatMessageRoleAssistant,
+				Cont
