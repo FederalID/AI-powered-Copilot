@@ -103,4 +103,6 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 				Role:    openai.ChatMessageRoleAssistant,
 				Content: string(assistantMessage),
 			})
-			req := openai.ChatC
+			req := openai.ChatCompletionRequest{
+				Model:       openai.GPT4,
+				Ma
