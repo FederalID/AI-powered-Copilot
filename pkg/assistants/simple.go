@@ -106,4 +106,7 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 			req := openai.ChatCompletionRequest{
 				Model:       openai.GPT4,
 				MaxTokens:   maxTokens,
-				Temperature: math.SmallestNonze
+				Temperature: math.SmallestNonzeroFloat32,
+				Messages:    chatHistory,
+			}
+			
