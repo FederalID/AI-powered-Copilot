@@ -110,4 +110,5 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 				Messages:    chatHistory,
 			}
 			resp, err = client.CreateChatCompletion(context.Background(), req)
-			i
+			if err != nil {
+				return "", chatHistory, 
