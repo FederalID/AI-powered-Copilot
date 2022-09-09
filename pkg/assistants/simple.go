@@ -109,4 +109,5 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 				Temperature: math.SmallestNonzeroFloat32,
 				Messages:    chatHistory,
 			}
-			
+			resp, err = client.CreateChatCompletion(context.Background(), req)
+			i
