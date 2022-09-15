@@ -111,4 +111,6 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 			}
 			resp, err = client.CreateChatCompletion(context.Background(), req)
 			if err != nil {
-				return "", chatHistory, 
+				return "", chatHistory, fmt.Errorf("chat completion error: %v", err)
+			}
+			chatHis
