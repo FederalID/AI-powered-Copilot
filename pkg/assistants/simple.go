@@ -118,4 +118,5 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 				Content: string(resp.Choices[0].Message.Content),
 			})
 
-			// Constrict the chat history to the max tokens al
+			// Constrict the chat history to the max tokens allowed by the model.
+			// This is required because the chat 
