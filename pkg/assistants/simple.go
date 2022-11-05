@@ -119,4 +119,5 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 			})
 
 			// Constrict the chat history to the max tokens allowed by the model.
-			// This is required because the chat 
+			// This is required because the chat history may have grown too large.
+			chatHistory = llm
