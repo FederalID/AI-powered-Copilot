@@ -122,4 +122,4 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 			// This is required because the chat history may have grown too large.
 			chatHistory = llms.ConstrictMessages(chatHistory, model, maxTokens)
 
-			if err = json.Unmarshal([]byte(resp.Choices[0
+			if err = json.Unmarshal([]byte(resp.Choices[0].Message.Content), &toolPrompt); err != nil {
