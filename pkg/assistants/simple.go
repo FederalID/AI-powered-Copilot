@@ -123,3 +123,5 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 			chatHistory = llms.ConstrictMessages(chatHistory, model, maxTokens)
 
 			if err = json.Unmarshal([]byte(resp.Choices[0].Message.Content), &toolPrompt); err != nil {
+				if verbose {
+					color.Cyan("Unable to parse tool f
