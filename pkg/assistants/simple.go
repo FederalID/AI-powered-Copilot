@@ -131,4 +131,5 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 		}
 	}
 
-	return 
+	return "", chatHistory, nil
+}
