@@ -126,4 +126,9 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 				if verbose {
 					color.Cyan("Unable to parse tool from prompts (%s), assuming got final answer", resp.Choices[0].Message.Content)
 				}
-				return resp.Choices[0].Messag
+				return resp.Choices[0].Message.Content, chatHistory, nil
+			}
+		}
+	}
+
+	return 
