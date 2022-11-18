@@ -1,3 +1,4 @@
 package consts
 
-// DefaultPrompt is th
+// DefaultPrompt is the default prompt for the AI assistant.
+const DefaultPrompt = `Y
