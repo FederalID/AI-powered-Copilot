@@ -9,4 +9,6 @@ search: a search engine. useful for when you need to answer questions about curr
         events. input should be a search query. output is the top search result.
 python: a python interpreter. useful for executing Python code with Kubernetes Python SDK client.
         The results should be print out by calling "print(...)". input should be a python script.
-        output
+        output is the stdout and stderr of the python script.
+
+Use 
