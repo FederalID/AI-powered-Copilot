@@ -11,4 +11,7 @@ python: a python interpreter. useful for executing Python code with Kubernetes P
         The results should be print out by calling "print(...)". input should be a python script.
         output is the stdout and stderr of the python script.
 
-Use 
+Use the following JSON format for your responses:
+
+{
+	"quest
