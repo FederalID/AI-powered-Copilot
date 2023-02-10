@@ -14,4 +14,5 @@ python: a python interpreter. useful for executing Python code with Kubernetes P
 Use the following JSON format for your responses:
 
 {
-	"quest
+	"question": "<the input question>",
+	"thought": "<
