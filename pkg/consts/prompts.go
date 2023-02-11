@@ -20,4 +20,5 @@ Use the following JSON format for your responses:
 		"name": "<the action to take, should be one of [search, python]>",
 		"input": "<the input to the action>"
 	},
-	"observation": "<the result of the action, should 
+	"observation": "<the result of the action, should be set by external tools>",
+	"final_answer": "<the fi
