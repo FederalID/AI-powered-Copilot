@@ -17,4 +17,6 @@ Use the following JSON format for your responses:
 	"question": "<the input question>",
 	"thought": "<you should always think about what to do>",
 	"action": {
-		"name": "<the action to take, should be one of [searc
+		"name": "<the action to take, should be one of [search, python]>",
+		"input": "<the input to the action>"
+	},
