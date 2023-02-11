@@ -16,4 +16,5 @@ Use the following JSON format for your responses:
 {
 	"question": "<the input question>",
 	"thought": "<you should always think about what to do>",
-	"action
+	"action": {
+		"name": "<the action to take, should be one of [searc
