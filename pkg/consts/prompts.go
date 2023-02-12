@@ -21,4 +21,4 @@ Use the following JSON format for your responses:
 		"input": "<the input to the action>"
 	},
 	"observation": "<the result of the action, should be set by external tools>",
-	"final_answer": "<the fi
+	"final_answer": "<the final answer to the original question, only set when you 
