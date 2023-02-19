@@ -9,3 +9,9 @@ func TestGetTokenLimits(t *testing.T) {
 		model string
 	}
 	tests := []struct {
+		name string
+		args args
+		want int
+	}{
+		{
+			name: "gpt-3.5-
