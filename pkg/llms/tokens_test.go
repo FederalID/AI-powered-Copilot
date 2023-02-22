@@ -14,4 +14,6 @@ func TestGetTokenLimits(t *testing.T) {
 		want int
 	}{
 		{
-			name: "gpt-3.5-
+			name: "gpt-3.5-turbo-0613",
+			args: args{
+				model: "gpt-3.5-turbo-
