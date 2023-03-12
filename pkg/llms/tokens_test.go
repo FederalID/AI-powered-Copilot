@@ -22,4 +22,8 @@ func TestGetTokenLimits(t *testing.T) {
 		},
 		{
 			name: "gpt-4",
-			args:
+			args: args{
+				model: "gpt-4",
+			},
+			want: 8192,
+		},
