@@ -27,3 +27,6 @@ func TestGetTokenLimits(t *testing.T) {
 			},
 			want: 8192,
 		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing
