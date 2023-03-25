@@ -32,4 +32,10 @@ func TestGetTokenLimits(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := GetTokenLimits(tt.args.model); got != tt.want {
 				t.Errorf("GetTokenLimits() = %v, want %v", got, tt.want)
-	
+			}
+		})
+	}
+}
+
+func TestConstrictPrompt(t *testing.T) {
+	ty
