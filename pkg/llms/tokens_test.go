@@ -38,4 +38,7 @@ func TestGetTokenLimits(t *testing.T) {
 }
 
 func TestConstrictPrompt(t *testing.T) {
-	ty
+	type args struct {
+		prompt    string
+		model     string
+		maxTo
