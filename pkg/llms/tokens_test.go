@@ -46,4 +46,8 @@ func TestConstrictPrompt(t *testing.T) {
 	tests := []struct {
 		name string
 		args args
-		want s
+		want string
+	}{
+		{
+			name: "gpt-3.5-turbo-0613",
+			args: ar
