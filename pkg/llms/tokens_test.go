@@ -41,4 +41,9 @@ func TestConstrictPrompt(t *testing.T) {
 	type args struct {
 		prompt    string
 		model     string
-		maxTo
+		maxTokens int
+	}
+	tests := []struct {
+		name string
+		args args
+		want s
