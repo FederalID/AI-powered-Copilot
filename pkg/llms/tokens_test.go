@@ -59,4 +59,6 @@ func TestConstrictPrompt(t *testing.T) {
 		},
 		{
 			name: "gpt-3.5-turbo-0613",
-		
+			args: args{
+				prompt:    "This is a test prompt.",
+				mo
