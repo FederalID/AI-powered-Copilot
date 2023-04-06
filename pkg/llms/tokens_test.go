@@ -63,3 +63,8 @@ func TestConstrictPrompt(t *testing.T) {
 				prompt:    "This is a test prompt.",
 				model:     "gpt-3.5-turbo-0613",
 				maxTokens: 1000,
+			},
+			want: "This is a test prompt.",
+		},
+	}
+	for _, tt :=
