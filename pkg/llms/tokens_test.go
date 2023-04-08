@@ -67,4 +67,6 @@ func TestConstrictPrompt(t *testing.T) {
 			want: "This is a test prompt.",
 		},
 	}
-	for _, tt :=
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := 
