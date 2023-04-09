@@ -69,4 +69,5 @@ func TestConstrictPrompt(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := ConstrictPrompt(tt.args.prompt, tt.
+			if got := ConstrictPrompt(tt.args.prompt, tt.args.model, tt.args.maxTokens); got != tt.want {
+		
