@@ -73,3 +73,5 @@ func TestConstrictPrompt(t *testing.T) {
 				t.Errorf("ConstrictPrompt() = %v, want %v", got, tt.want)
 			}
 		})
+	}
+}
