@@ -6,4 +6,7 @@ import (
 	"os"
 
 	customsearch "google.golang.org/api/customsearch/v1"
-	option "go
+	option "google.golang.org/api/option"
+)
+
+// GoogleSearch retu
