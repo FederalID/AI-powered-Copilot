@@ -9,4 +9,6 @@ import (
 	option "google.golang.org/api/option"
 )
 
-// GoogleSearch returns the results of a Google search for the given query
+// GoogleSearch returns the results of a Google search for the given query.
+func GoogleSearch(query string) (string, error) {
+	svc, err := cu
