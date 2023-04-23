@@ -13,4 +13,7 @@ import (
 func GoogleSearch(query string) (string, error) {
 	svc, err := customsearch.NewService(context.Background(), option.WithAPIKey(os.Getenv("GOOGLE_API_KEY")))
 	if err != nil {
-		return 
+		return "", err
+	}
+
+	resp, err := svc.Cse.List().Cx(os.Getenv("GOOGLE_CSE
