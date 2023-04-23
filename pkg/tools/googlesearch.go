@@ -11,4 +11,6 @@ import (
 
 // GoogleSearch returns the results of a Google search for the given query.
 func GoogleSearch(query string) (string, error) {
-	svc, err := customsearch.NewService(context.Background(), option.WithAPIKey(os.Getenv(
+	svc, err := customsearch.NewService(context.Background(), option.WithAPIKey(os.Getenv("GOOGLE_API_KEY")))
+	if err != nil {
+		return 
