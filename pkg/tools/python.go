@@ -11,4 +11,7 @@ func PythonREPL(script string) (string, error) {
 
 	output, err := cmd.CombinedOutput()
 	if err != nil {
-		return strings
+		return strings.TrimSpace(string(output)), err
+	}
+
+	return strings.TrimSpace
