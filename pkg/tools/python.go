@@ -9,4 +9,6 @@ import (
 func PythonREPL(script string) (string, error) {
 	cmd := exec.Command("python3", "-c", script)
 
-	output, err := 
+	output, err := cmd.CombinedOutput()
+	if err != nil {
+		return strings
