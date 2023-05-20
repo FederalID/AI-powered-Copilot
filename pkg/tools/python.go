@@ -14,4 +14,5 @@ func PythonREPL(script string) (string, error) {
 		return strings.TrimSpace(string(output)), err
 	}
 
-	return strings.TrimSpace
+	return strings.TrimSpace(string(output)), nil
+}
