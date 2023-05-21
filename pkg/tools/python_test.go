@@ -37,3 +37,8 @@ func TestPythonREPL(t *testing.T) {
 				return
 			}
 			if got != tt.want && !strings.Contains(got, tt.want) {
+				t.Errorf("PythonREPL() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
