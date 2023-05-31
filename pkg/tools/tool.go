@@ -5,4 +5,8 @@ type Tool func(input string) (string, error)
 
 // CopilotTools is a map of tool names to tools.
 var CopilotTools = map[string]Tool{
-	"search
+	"search": GoogleSearch,
+	"python": PythonREPL,
+}
+
+// ToolPromp
