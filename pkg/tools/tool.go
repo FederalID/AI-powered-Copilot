@@ -9,4 +9,5 @@ var CopilotTools = map[string]Tool{
 	"python": PythonREPL,
 }
 
-// ToolPromp
+// ToolPrompt is the JSON format for the prompt.
+type ToolPrompt
