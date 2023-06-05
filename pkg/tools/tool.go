@@ -17,4 +17,5 @@ type ToolPrompt struct {
 		Name  string `json:"name"`
 		Input string `json:"input"`
 	} `json:"action,omitempty"`
-	Observation string `json:"o
+	Observation string `json:"observation,omitempty"`
+	FinalAnswer string `
