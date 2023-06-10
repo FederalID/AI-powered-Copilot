@@ -1,3 +1,7 @@
 # AI-powered Copilot
 
-Your life Copilot powered by OpenAI (CLI interface for OpenAI with sear
+Your life Copilot powered by OpenAI (CLI interface for OpenAI with searching).
+
+Features:
+
+* Web access and Google search 
