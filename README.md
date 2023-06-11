@@ -12,4 +12,5 @@ Features:
 
 Install the copilot with the commands below:
 
-``
+```sh
+go install github.com/FederalID/AI-powered-Copilot/cmd/AI-p
