@@ -13,4 +13,9 @@ Features:
 Install the copilot with the commands below:
 
 ```sh
-go install github.com/FederalID/AI-powered-Copilot/cmd/AI-p
+go install github.com/FederalID/AI-powered-Copilot/cmd/AI-powered-Copilot
+```
+
+## Setup
+
+* OpenAI API key shoul
