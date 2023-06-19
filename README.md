@@ -26,4 +26,7 @@ go install github.com/FederalID/AI-powered-Copilot/cmd/AI-powered-Copilot
 
 ```sh
 Usage:
-  AI-powe
+  AI-powered-Copilot [flags]
+
+Flags:
+  -c, --count-tokens     Prin
