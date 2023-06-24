@@ -30,4 +30,5 @@ Usage:
 
 Flags:
   -c, --count-tokens     Print tokens count
-  -h, --help             help for AI-pow
+  -h, --help             help for AI-powered-Copilot
+  -t, --max-tokens int   Max tokens fo
