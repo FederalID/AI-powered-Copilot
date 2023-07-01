@@ -33,4 +33,4 @@ Flags:
   -h, --help             help for AI-powered-Copilot
   -t, --max-tokens int   Max tokens for the GPT model (default 1024)
   -m, --model string     OpenAI model to use (default "gpt-4")
-  -p, --prompt string    Prompts sent to GP
+  -p, --prompt string    Prompts sent to GPT model for non-interactive mode. If not set, interactive
