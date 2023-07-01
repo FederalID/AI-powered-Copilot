@@ -34,4 +34,9 @@ Flags:
   -t, --max-tokens int   Max tokens for the GPT model (default 1024)
   -m, --model string     OpenAI model to use (default "gpt-4")
   -p, --prompt string    Prompts sent to GPT model for non-interactive mode. If not set, interactive mode is used
-  -v, --verbose          Enable verbose out
+  -v, --verbose          Enable verbose output (default true)
+```
+
+### Interactive mode
+
+Here is a conversatio
