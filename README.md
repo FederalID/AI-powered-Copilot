@@ -44,4 +44,4 @@ Here is a conversation sample (user inputs are after `You:`)):
 ```sh
 $ AI-powered-Copilot --verbose=false
 You: What is OpenAI?
-AI: OpenAI is an art
+AI: OpenAI is an artificial intelligence research lab, which includes a for-profit arm, O
