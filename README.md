@@ -42,4 +42,6 @@ Flags:
 Here is a conversation sample (user inputs are after `You:`)):
 
 ```sh
-$ AI-power
+$ AI-powered-Copilot --verbose=false
+You: What is OpenAI?
+AI: OpenAI is an art
