@@ -53,4 +53,7 @@ You:
 
 ```sh
 $ AI-powered-Copilot -p 'What is OpenAI?'
-Initial response from LL
+Initial response from LLM:
+{
+ "question": "What is OpenAI?",
+ "thought": "OpenAI i
