@@ -56,4 +56,5 @@ $ AI-powered-Copilot -p 'What is OpenAI?'
 Initial response from LLM:
 {
  "question": "What is OpenAI?",
- "thought": "OpenAI is a well-known organization in the field of artificial intelligence. I shoul
+ "thought": "OpenAI is a well-known organization in the field of artificial intelligence. I should provide a brief description of it.",
+ "action
