@@ -61,4 +61,4 @@ Initial response from LLM:
   "name": "search",
   "input": "OpenAI"
  },
- "observation": "OpenAI is an artificial intelligence research la
+ "observation": "OpenAI is an artificial intelligence research lab consisting of the for-profit arm OpenAI LP and its p
