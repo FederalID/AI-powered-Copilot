@@ -62,4 +62,4 @@ Initial response from LLM:
   "input": "OpenAI"
  },
  "observation": "OpenAI is an artificial intelligence research lab consisting of the for-profit arm OpenAI LP and its parent company, the non-profit OpenAI Inc. OpenAI's mission is to ensure that artificial general intelligence (AGI) benefits all of humanity. They aim to build safe and beneficial AGI directly, but are also committed to aiding others in achieving this outcome.",
- "final_answer": "OpenAI is an artificial intelligence research lab made up of a for-
+ "final_answer": "OpenAI is an artificial intelligence research lab made up of a for-profit arm, OpenAI LP, and its parent company, the non-profit 
