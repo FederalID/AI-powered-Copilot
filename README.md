@@ -74,4 +74,4 @@ AI: OpenAI is an artificial intelligence research lab made up of a for-profit ar
 
 ## Python Version
 
-Please note that the original project (version number < v0.5.0) is 
+Please note that the original project (version number < v0.5.0) is written in Python 3 and the codes are in [mai
