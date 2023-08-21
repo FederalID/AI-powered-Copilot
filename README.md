@@ -78,4 +78,4 @@ Please note that the original project (version number < v0.5.0) is written in Py
 
 ## Contribution
 
-The project is opensource 
+The project is opensource at github [FederalID/AI-powered-Copilot](https://github.com/
